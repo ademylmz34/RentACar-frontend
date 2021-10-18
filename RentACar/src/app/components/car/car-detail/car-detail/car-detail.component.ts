@@ -16,7 +16,7 @@ export class CarDetailComponent implements OnInit {
 
   cars:Car[];
   images:CarImage[];
-  imageUrl = environment.baseURL;
+  
 
   currentImage: CarImage;
 
