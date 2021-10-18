@@ -1,0 +1,32 @@
+
+    <ul *ngFor="let car of cars"
+    (click)="setCurrentCar(car)"
+    routerLink = "/cars/details/{{car.id}}"
+    [class]="getCarClass(car)">
+      <li
+        class="
+          list-group-item
+          bg-primary bg-gradient
+          text-light text-center
+          mb-1
+          rounded
+        "
+      >
+        <strong>Araç Özellikleri</strong>
+      </li>
+      <li class="list-group-item">
+        <strong>Marka: </strong>{{ car.brandName }}
+      </li>
+      <li class="list-group-item">
+        <strong>Model: </strong>{{ car.modelYear }}
+      </li>
+      <li class="list-group-item">
+        <strong>Renk: </strong>{{ car.colorName }}
+      </li>
+      <li class="list-group-item">
+        <strong>Fiyat/Gün: </strong>{{ car.dailyPrice }} ₺
+      </li>
+  </ul>
+
+
+
